@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 120px;
+    width:100%;
+    font-family: sans-serif;
+    position: fixed;
+   /* background-image: url('burj3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    background-color: beige;
+    animation: 20s change;
+    /* box-shadow: 0px 20px 20px grey; */
+    display: flex;
+}
+/*
+@keyframes change
+{
+    0%{
+        background-image: url('p1-1024x707.jpg');
+    }
+    33%{
+        background-image: url('p1-1024x707.jpg');
+    }
+    68%{
+        background-image: url('p1-1024x707.jpg');
+    }
+    100%{
+        background-image: url('burj3.jpg');
+    }
+}
+*/
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:transparent;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img
+{
+   height: 95px;
+   width: 180px;
+   
+}
+.menu a{
+    text-decoration: none;
+    color:black;
+    padding: 10px 20px;
+    
+    text-align: bottom;
+    font-size: 25px;
+    font-style: bold;
+    position: relative;
+}
+.menu a:before{
+       content:'';
+       position:absolute;
+       top: 0;
+       left:5px;
+       width: 0%;
+       height: 100%;
+       border-bottom:2px solid indianred;
+       transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 100%;
+}
+.register a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: .5s linear;
+}
+.register a:hover{
+    background: transparent;
+    border: 3px solid indianred;
+    color: black;
+ }
+
+ .heading-1
+ {
+    height: 800px;
+    width: auto;
+    border: 5px solid white;
+    background-image: url('burj3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0px 20px 20px grey;
+    margin: 0px;
+ }
+ .main-heading {
+   
+    margin: 120px;
+    padding: 40px;
+    font-size: 30px;
+}
+.main-heading h1{
+    font-size: 60px;
+    font-weight:30;
+}
+.main-heading h2
+{
+    margin: 15px;
+    font-size: 50px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.main-heading h3{
+    margin: 20px;
+   font-size: 45px;
+    font-style: oblique;
+}
+ .sub-heading
+ {
+    
+    margin: -140px 140px;
+    display: flex;
+ }
+ .sub-heading p{
+    margin: 0px 20px;
+    font-size: 35px;
+    color:black;
+ }
+.sub-heading button{
+    margin-left: 150px;
+    justify-content: space-between;
+    height: 50px;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: indianred;
+    color:white;
+}
+.main-container
+{
+    height: 700px;
+    width: auto;
+    /* border: 2px solid black;  */
+    margin: 20px 50px;
+}
+.main-container .heading
+{
+    font-size: 40px;
+    font-style: bold;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+.main-container .small-container
+{
+    height: 500px;
+    width: auto;
+    margin: 20px 100px;
+    padding:30px;
+    
+   /* border: 2px solid black;  */
+}
+.main-container .small-container pre p
+{
+     font-size: 24px;
+     font-family:'Times New Roman', Times, serif;
+     text-align: center;
+}
+.main-container .small-container .highlighted-text
+{
+    font-size: 30px;
+    font-style: bold;
+    word-spacing: 4px;
+    color: rgb(180, 53, 53);
+    text-align: center;
+    margin: 20px;
+}
+.small-container .box
+{
+    height: 200px;
+    width: auto;
+    margin: 50px 20px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 7px 15px lightgray,-2px -3px 15px lightgray;
+}
+.small-container .box h2
+{
+    margin:20px 50px;
+    padding: 5px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.small-container .box h2  button
+{
+    
+    height: 50px;
+    width: 250px;
+    background-color: indianred;
+    margin-left: 700px;
+    margin-top: auto;
+    border-radius: 10px;
+    font-size:20px;
+    font-style: bold;
+    color: white;
+    box-shadow: 10px 10px 8px lightgray;
+    transition:height 1s,width 1s,box-shadow 0.5s;
+}
+.small-container .box h2  button:hover
+{
+    height: 55px;
+    width:255px ;
+    box-shadow: 0px 0px 2px darkgrey;;
+}
+
+.small-container .box p
+{
+    margin: -40px 60px;
+    font-size: 20px;
+
+}
+.container {
+    height:140vh;
+    width: auto;
+    background-color:rgb(214, 214, 227) ;
+    margin-top:  50px;
+    position:relative;
+
+}
+.curve{
+    position: absolute;
+    top: 140vh;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: rgb(214, 214, 227) url('https:front-end-noobs.com/jecko/img/wave-top.png');
+    background-size: 2000px 100px;
+    animation: ani_wave 10s linear infinite;
+}
+@keyframes ani_wave
+{
+    0%
+    {
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x:2000px;
+    }
+}
+.container h1{
+    
+    text-align: center;
+    padding: 60px;
+    font-size: 40px;
+
+}
+.container .showcase
+{
+    height: 900px;
+    width: 1250px;
+    margin: -10px 150px;
+    padding:40px 60px;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    content: inherit;
+     gap: 30px;
+    justify-content: space-between;
+    /* border:2px solid black;  */
+}
+.container .showcase .box-1
+{
+    height: 340px;
+    width: 320px;
+    position: relative;
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: 10px 10px 8px rgb(196, 184, 218);
+    transition:width 1s ,height 1s ,box-shadow 0.5s;
+    
+
+}
+.container .showcase .box-1:hover
+{
+    height: 350px;
+    width: 330px;
+    box-shadow: 0px 0px 2px darkgrey;
+}
+.container .showcase .box-1  img 
+{
+    height: 180px;
+    width: inherit;
+}
+.container .showcase .box-1 h3{
+    text-align: center;
+    padding: 15px;
+    
+}
+.container .showcase .box-1 .not-highlight{
+    font-size: medium;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline;
+    text-align: center;
+    padding: 1px 78px;
+
+   
+}
+.container .showcase .box-1 .highlighted-text
+{
+    padding:1px 100px;
+}
+.imp
+{
+    height: 100vh;
+    width: auto;
+    /* border: 2px solid salmon; */
+    position: relative;
+}
+.imp h1
+{
+    margin: 150px 100px;
+    font-size: 40px;
+    text-align: center;
+}
+.imp .container-1
+{
+    height:65vh;
+    width: 90%;
+    margin-top: 50px;
+   margin-left: 80px;
+    /* border:2px solid black; */
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    
+}
+.imp .container-1 .d1{
+    height: 150px;
+    width: 350px;
+    margin: 40px 40px;
+    box-shadow: 5px 5px 9px rgb(200, 200, 205),-5px -5px 9px rgb(200, 200, 205);
+    border-radius: 10px;
+    display:flex;
+    
+}
+.imp .container-1 .d1  h3
+{
+    text-align:left;
+    margin: 50px 30px;
+    font-size: 25px;
+
+}
+.imp .container-1 .d1 img
+{
+    height: 60px;
+    width: 60px;
+    margin-left:-30px ;
+    margin-top: 40px;
+    
+}
