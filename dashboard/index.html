@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="container">
+           <input type="text" placeholder="search">
+           <a href="#">
+           <li class="fa fa-search fa-flip"  style="font-size:15px;color:#666666;"></li>
+           </a>
+        </div>
+        <div class="header-right">
+          <span class=" fa-regular fa-bell fa-shake"style="font-size:20px;color:#666666;" onclick="toggleNotify()"> </span>
+          <div class="notification" id="box">
+            <div class="notify-box" >
+          
+            <h3>Your notification live here</h3>
+            <p>Don't miss the latest updates and more from your favourite channels. </p>
+            <button type="submit" onclick="setting()">Turn on Notification</button>
+            </div>
+        </div>
+          <span class=" fa-regular fa-envelope fa-beat-fade"style="font-size:20px;color:#666666;" ></span>
+  
+          <span class="fa-regular fa-circle-user fa-fade" style="font-size:20px;color:#666666;"  ></span>
+         
+          
+
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined"></span> Rental Management System
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a  target="_blank">
+              <span class="fa-solid fa-house-chimney-window"> </span>  House Type
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="newTicket.html" >
+              <span class="fa fa-house"> </span>  Houses
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="openTicket.html" target="_blank">
+              <span class="fa fa-users"> </span>  Tenants
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="answeredTicket.html" target="_blank">
+              <span class="fab fa-amazon-pay"> </span>  Payments
+            </a>
+          </li>
+         
+          <li class="sidebar-list-item">
+            <a href="closedTicket.html" target="_blank">
+              <span  class="fas fa-file-alt"></span>  Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="fa-solid fa-user"></span>  Users
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+         <p class="font-weight-bold">DASHBOARD</p>
+
+        </div>
+
+        <div class="main-cards">
+       
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> Total Houses</p>
+              <span class="fa-solid fa-house-chimney-window" ></span>
+            </div>
+            <span class="text-primary font-weight-bold">2</span>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Total Tenants</p>
+              <span class="fas fa-user-friends"></span>
+           </div>
+            <span class="text-primary font-weight-bold">3</span>
+          </div>
+         
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Paymets Done</p>
+              <span class="fa-regular fa-credit-card"></span>
+            </div>
+            <span class="text-primary font-weight-bold">79</span>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Users</p>
+              <span class="fa-solid fa-user"></span>
+            </div>
+            <span class="text-primary font-weight-bold">2</span>
+          </div>
+        
+        </div>
+        
+     </main> 
+    </div>
+ 
+
+   <!----End of main and starting footer-->
+                         
+   <footer>
+    <div class="row">
+      <div class="col">
+        <h3>Infinity Ventures<span></span></h3>
+        <p class="footer-company-name">&copy;2021 - A2ZSolutions LLC - <a href="#" style="color:rgb(30, 70, 162)">Supported By Infinity Ventures (India)
+            Pvt Ltd.</a>
+          All rights are reserved</p>
+      </div>
+
+      <div class="col">
+             <h3>Office <div class="underline"><span></span></div> </h3>
+             <p>Lucknow </p>
+             <p>Uttar Pradesh</p>
+             <p class="email-id"> <a href="#" style="text-decoration: none;">support@a2zsolutions.com</a></p>
+             <p>Contact us on : +91923567899</p>
+            
+      </div>
+
+      <div class="col">
+         <h3>Links <div class="underline"><span></span></div> </h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+          <h3>Newsletter  <div class="underline"><span></span></div> </h3>
+          <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy;2021 - A2ZSolutions LLC - <a href="#" style="color:rgb(30, 70, 162)">Supported By Infinity Ventures (India)
+      Pvt Ltd.</a> All rights are reserved</p>
+
+   </footer>
+
+
+  
+    
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scrypts.js"></script>
+
+
+  </body>
+</html>
